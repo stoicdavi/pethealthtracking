@@ -1,0 +1,23 @@
+# Ignore database configuration
+includes/db_connect.php
+
+# Ignore uploaded files
+uploads/pets/*
+!uploads/pets/.gitkeep
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore vendor directories if using composer
+vendor/
