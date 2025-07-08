@@ -1,0 +1,287 @@
+/* Pet-themed styles and decorative elements */
+
+/* Pet-themed backgrounds */
+.bg-paws {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="%23e3a587" opacity="0.05" d="M30,26c-9.4,0-22.5,14.4-22.5,23.5c0,4.1,3.1,6.5,8.4,6.5c5.7,0,9.5-2.9,14.1-2.9c4.6,0,8.4,2.9,14.1,2.9c5.3,0,8.4-2.4,8.4-6.5C52.5,40.4,39.4,26,30,26z M14,3.5c-5.8,0-10.5,4.7-10.5,10.5S8.2,24.5,14,24.5s10.5-4.7,10.5-10.5S19.8,3.5,14,3.5z M24.5,30c0,5.8-4.7,10.5-10.5,10.5S3.5,35.8,3.5,30S8.2,19.5,14,19.5S24.5,24.2,24.5,30z M35.5,33.5c0,5.8-4.7,10.5-10.5,10.5S14.5,39.3,14.5,33.5S19.2,23,25,23S35.5,27.7,35.5,33.5z M46,19.5c0,5.8-4.7,10.5-10.5,10.5S25,25.3,25,19.5S29.7,9,35.5,9S46,13.7,46,19.5z M56.5,29c0,5.8-4.7,10.5-10.5,10.5S35.5,34.8,35.5,29s4.7-10.5,10.5-10.5S56.5,23.2,56.5,29z"/></svg>');
+  background-repeat: repeat;
+}
+
+.bg-pets {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="%234d9de0" opacity="0.05" d="M30,20c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S35.5,20,30,20z M30,35c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S32.8,35,30,35z"/><path fill="%23e3a587" opacity="0.05" d="M70,20c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S75.5,20,70,20z M70,35c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S72.8,35,70,35z"/><path fill="%237fb069" opacity="0.05" d="M20,60c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S25.5,60,20,60z M20,75c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S22.8,75,20,75z"/><path fill="%237c6a86" opacity="0.05" d="M50,60c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S55.5,60,50,60z M50,75c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S52.8,75,50,75z"/><path fill="%23e1bc29" opacity="0.05" d="M80,60c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S85.5,60,80,60z M80,75c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S82.8,75,80,75z"/></svg>');
+  background-repeat: repeat;
+}
+
+/* Hero section with pet-themed background */
+.hero {
+  background-color: var(--primary-color);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="%23ffffff" opacity="0.1" d="M30,20c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S35.5,20,30,20z M70,20c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S75.5,20,70,20z M20,60c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S25.5,60,20,60z M50,60c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S55.5,60,50,60z M80,60c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S85.5,60,80,60z"/></svg>');
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+/* Pet-themed decorative elements */
+.pet-divider {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.pet-divider::before,
+.pet-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #67728a;
+}
+
+.pet-divider-icon {
+  margin: 0 1rem;
+  color: var(--accent-color);
+  font-size: 1.25rem;
+}
+
+/* Pet type icons */
+.pet-type-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  margin-bottom: 0.75rem;
+}
+
+.pet-type-dog {
+  color: #8b5cf6;
+}
+
+.pet-type-cat {
+  color: #f59e0b;
+}
+
+.pet-type-bird {
+  color: #10b981;
+}
+
+.pet-type-fish {
+  color: #3b82f6;
+}
+
+.pet-type-other {
+  color: #ec4899;
+}
+
+/* Pet feature cards */
+.pet-feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.pet-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pet-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.pet-feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Pet profile header */
+.pet-profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.pet-profile-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+}
+
+.pet-profile-info h1 {
+  margin-bottom: 0.5rem;
+}
+
+.pet-profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pet-profile-meta-item {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+}
+
+.pet-profile-meta-item i {
+  margin-right: 0.5rem;
+  color: var(--accent-color);
+}
+
+/* Pet health status indicators */
+.health-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.health-status-healthy {
+  background-color: rgba(127, 176, 105, 0.1);
+  color: var(--success-color);
+}
+
+.health-status-healthy i {
+  color: var(--success-color);
+  margin-right: 0.5rem;
+}
+
+.health-status-attention {
+  background-color: rgba(225, 188, 41, 0.1);
+  color: var(--warning-color);
+}
+
+.health-status-attention i {
+  color: var(--warning-color);
+  margin-right: 0.5rem;
+}
+
+.health-status-critical {
+  background-color: rgba(225, 85, 84, 0.1);
+  color: var(--danger-color);
+}
+
+.health-status-critical i {
+  color: var(--danger-color);
+  margin-right: 0.5rem;
+}
+
+/* Pet timeline */
+.pet-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.pet-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.5rem;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+.pet-timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.pet-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.pet-timeline-icon {
+  position: absolute;
+  left: -2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  z-index: 1;
+}
+
+.pet-timeline-content {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.pet-timeline-date {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.pet-timeline-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+  }
+  
+  .pet-profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .pet-profile-image {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pet-profile-meta {
+    justify-content: center;
+  }
+}

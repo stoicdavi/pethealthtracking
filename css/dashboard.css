@@ -1,0 +1,31 @@
+/* Dashboard specific styles */
+
+/* Ensure dashboard content doesn't affect footer width */
+.dashboard-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fix for footer on dashboard pages */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure footer spans full width on dashboard pages */
+footer {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 0;
+  }
+}

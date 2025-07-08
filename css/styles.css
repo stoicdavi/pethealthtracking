@@ -1,0 +1,20 @@
+/* Main stylesheet - imports all component stylesheets */
+
+/* Import base styles */
+@import url('base.css');
+
+/* Import component styles */
+@import url('components.css');
+
+/* Import navigation styles */
+@import url('navigation.css');
+
+/* Import pet-themed styles */
+@import url('pet-theme.css');
+
+/* Import dashboard styles */
+@import url('dashboard.css');
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+

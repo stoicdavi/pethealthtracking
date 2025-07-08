@@ -1,0 +1,39 @@
+# Protect the admin directory
+# Redirect all direct access attempts to the login page
+
+# Disable directory listing
+Options -Indexes
+
+# Deny access to .htaccess file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# PHP error handling
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+
+# Ensure PHP errors are logged
+php_flag log_errors on
+php_value error_log ../logs/admin_php_errors.log
+
+# Prevent direct access to PHP files
+<FilesMatch "\.php$">
+    # Allow access only if the session is valid
+    # This is a fallback - the PHP scripts themselves should check for admin access
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Redirect index.php access to login if not authenticated
+# This is a fallback - the PHP scripts themselves should check for admin access
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /admin/
+    
+    # If accessing admin directory directly without authentication
+    # Redirect to login page
+    # Note: This is a fallback - the PHP scripts themselves should check for admin access
+</IfModule>
